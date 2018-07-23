@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <p>Arrays are ways to hold groups of data together.</p>
+
+    <p>Previously, we could hold information by placing them in variables:</p>
+    <pre>
+      var friend1 = "Charlie";
+      var friend2 = "Liz";
+      var friend3 = "David";
+      var friend4 = "Mattias";
+
+    </pre>
+
+    <p> We could set each friend as a variable, but they would be individual and take a lot of code</p>
+    <p>It make more sense to use an array which holds the information as a group: </p>
+    <pre>
+      var friends = ["Charlie", "Liz", "David", "Mattias"];
+    </pre>
+    <p>The [] denotes an array and each value is separated by a comma. Arrays are indexed, begining with zero.
+    i.e. Charlie index 0, Liz index 1, David index 2, Matias index 3. The indices are used to retreive data in the array.</p>
+
+    <pre>
+      console.log(friends[0]) //"Charlie"
+      friends[1] + " loves " + friends[2] // "Liz loves David"
+    </pre>
+
+    <p>We can also update the array values with the indices</p>
+    <pre>
+      friends[0]= "Chuck";
+      friends[1] = "Lizzie";
+    </pre>
+    <p>And you can add new data by accessing an index that has no value</p>
+
+    <pre>
+      friends[4] = "Amelie";
+
+    </pre>
+
+<p> There are two more ways to initialize arrays</p>
+<pre>
+var friends = []; //by naming an empy array
+var friends = new Array(); //(uncommon) function to make an array (A must be capital)
+</pre>
+
+<p>Arrays can hole any type of data</p>
+<pre>
+var randomCollection = [49, true, "Herminone", null];
+</pre>
+<p>Arrays have a length property (begining with 1, instead of index 0)</p>
+<pre>
+var nums = [45, 37, 89, 24];
+nums.length    //4
+</pre>
+
+  </body>
+</html>
